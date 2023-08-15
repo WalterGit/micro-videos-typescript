@@ -10,6 +10,7 @@ describe("Category Tests", () => {
     const props: CategoryProperties = {
       name: "Walter/Silva",
       description: "Movie description",
+      teste: "teste",
       is_active: true,
       created_at: new Date(),
     };
@@ -29,6 +30,7 @@ describe("Category Tests", () => {
     const props: CategoryProperties = {
       name: "Walter",
       description: "Movie description1",
+      teste: "teste",
       is_active: true,
       created_at: new Date(),
     };
@@ -37,6 +39,7 @@ describe("Category Tests", () => {
     const category = new Category(props);
 
     // Assert
-    expect(category.props).toMatchObject(props);
+    expect(category.props).toStrictEqual(props);
+
   });
 });
