@@ -1,7 +1,7 @@
-import { CategoryProperties } from "./category.props";
+import { <FTName  | pascalcase>Properties } from "./<FTName>.props";
 
-export default class Category {
-  constructor(public readonly props: CategoryProperties) {}
+export default class <FTName  | pascalcase> {
+  constructor(public readonly props: <FTName  | pascalcase>Properties) {}
 
  get name(): string {
     return this.props.name;

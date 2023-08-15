@@ -1,7 +1,6 @@
-export type CategoryProperties = {
+export type <FTName  | pascalcase>Properties = {
   name: string;
   description?: string;
   is_active: boolean;
-  teste: string;
   created_at?: Date;
 };

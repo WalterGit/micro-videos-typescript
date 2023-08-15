@@ -1,16 +1,14 @@
-import category from "./category";
 import Category from "./category";
-import { CategoryProperties } from "./category.types";
+import { CategoryProperties } from "./category.props";
 
 describe("Category Tests", () => {
-  test("should be category is Walter/Silva", () => {
+  it("should be category is Walter/Silva", () => {
     // Triple A (Arrange, Act, Assert)
 
     // Arrange
     const props: CategoryProperties = {
       name: "Walter/Silva",
       description: "Movie description",
-      teste: "teste",
       is_active: true,
       created_at: new Date(),
     };
@@ -25,12 +23,11 @@ describe("Category Tests", () => {
     expect(category.props.created_at).toBe(props.created_at);
   });
 
-  test("should correctly initialize Category instance", () => {
+  it("should correctly initialize Category instance", () => {
     // Arrange
     const props: CategoryProperties = {
       name: "Walter",
       description: "Movie description1",
-      teste: "teste",
       is_active: true,
       created_at: new Date(),
     };
