@@ -8,7 +8,7 @@ export type CategoryProperties = {
 export default class Category {
   constructor(public readonly props: CategoryProperties) {}
 
-  get name(): string {
+ get name(): string {
     return this.props.name;
   }
 
