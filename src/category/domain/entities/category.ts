@@ -1,6 +1,6 @@
 export type CategoryProperties = {
   name: string;
-  description: string;
+  description?: string;
   is_asctive: boolean;
   created_at?: Date;
 };
@@ -16,7 +16,7 @@ export default class Category {
     this.props.name = name;
   }
 
-  get description(): string {
+  get description(): string | undefined{
     return this.props.description;
   }
 
