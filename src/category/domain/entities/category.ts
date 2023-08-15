@@ -1,9 +1,4 @@
-export type CategoryProperties = {
-  name: string;
-  description?: string;
-  is_asctive: boolean;
-  created_at?: Date;
-};
+import { CategoryProperties } from "./category.types";
 
 export default class Category {
   constructor(public readonly props: CategoryProperties) {}
@@ -21,7 +16,7 @@ export default class Category {
   }
 
   get is_active(): boolean {
-    return this.props.is_asctive;
+    return this.props.is_active;
   }
 
   get created_at(): Date | undefined {
