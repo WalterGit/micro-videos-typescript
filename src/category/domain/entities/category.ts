@@ -1,5 +1,3 @@
-import { get } from "sortablejs";
-
 export type CategoryProperties = {
   name: string;
   description: string;
