@@ -21,7 +21,5 @@ describe("Category Tests", () => {
       is_asctive: true,     
     });
     expect(category.props.name).toBe("");
-
-
   });
 });
